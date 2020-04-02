@@ -5,9 +5,6 @@
 
 body {
     background-color: #DBDFFF;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 a {
@@ -15,29 +12,41 @@ a {
     color: white;
 }
 
-.container{
+.icons {
     position: relative;
-    margin-top: 150px;
+    margin-top: 200px;
+    margin-left: 540px;
 }
 
-.container .guest {
-    position: relative;
-    margin: 0 auto;
+.icons .pic01 {
+    position: absolute;
 }
 
-.container .welcome {
-    font-family: krungthep;
-    font-size: 80px;
-    color: white;
-    text-align: center;
-    position: relative;
+.icons .pic02 {
+    position: absolute;
+    left: 330px;
 }
 
-.container .click {
+.texts {
+    position: relative;
+    margin-left: 605px;
+}
+
+.texts .guestclick {
     font-family: krungthep;
     font-size: 40px;
     color: white;
-    position: relative;
+    position: absolute;
+    top: 260px;
+}
+
+.texts .new {
+    font-family: krungthep;
+    font-size: 40px;
+    color: white;
+    position: absolute;
+    left: 290px;
+    top: 260px;
 }
 
 a:hover {
@@ -46,31 +55,36 @@ a:hover {
 
 @media (max-width: 700px) {
     
-    .container{
+    .icons {
+        position: relative;
+        margin: 190px 127px;
+        float: none;
+        width: auto;
+    }
+    
+    .icons .pic01 {
+        position: relative;
+    }
+    
+    .icons .pic02 {
+        display: none;
+    }
+    
+    .texts {
         position: relative;
         margin-top: 150px;
         float: none;
         width: auto;
     }
     
-    .container .guest {
-        position: relative;
-        margin: 0 auto;
-        float: none;
-        width: auto;
-    }
-    
-    .container .welcome {
+    .texts .guestclick {
         font-family: krungthep;
-        font-size: 40px;
+        font-size: 25px;
         color: white;
-        text-align: center;
         position: relative;
-        float: none;
-        width: auto;
     }
     
-    .container .click {
+    .texts .new {
         font-family: krungthep;
         font-size: 25px;
         color: white;
@@ -78,6 +92,3 @@ a:hover {
     }
 
 }
-
-
-
