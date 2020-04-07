@@ -1,139 +1,454 @@
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 body {
-    background-color: #FF9E9E;
+  background-color: #FF9E9E;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
 }
 
 .title {
-    font-family: krungthep;
-    font-size: 90px;
-    color: #FFF4C2;
-    position: absolute;
-    top: -40px;
+  font-family: krungthep;
+  font-size: 90px;
+  color: #FFF4C2;
+  position: absolute;
+  top: -40px;
 }
-  
-  .button {
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    position: absolute;
-    top: 20px;
-    left: 1495px;
-  }
-  .button:hover {
-    opacity: 0.6;
-  }
-  
-  .overlay {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
-  }
-  .overlay:target {
-    visibility: visible;
-    opacity: 1;
-  }
-  
-  .popup {
-    transition: all 1s ease-in-out;
-  }
-  .popup .close {
-    position: absolute;
-    top: 69px;
-    left: 180px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #4655a5;
-  }
-  .popup .close:hover {
-    color: #00FCED;
-  }
-  .popup .welcomemessage {
-    position: absolute;
-    top: 15px;
-    left: 195px;
-  }
-  .popup .content {
-    position: absolute;
-    top: 70px;
-    left: 200px;
-  }
+
+.folderline {
+  position: relative;
+  float: right;
+  background: none;
+  width: 10vw;
+  margin: 40px 20px;
+  height: 700px;
+}
+
+.folder01 {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 1em;
+  padding: 0;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.folder01:hover {
+  opacity: 0.6;
+}
+
+.foldertitle01 {
+  font-family: krungthep;
+  font-size: 13px;
+  color: #fff4c2;
+  position: absolute;
+  top: 125px;
+  right: 15px;
+}
+
+.popup01 {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0);
+z-index: 1;
+opacity:0;
+-webkit-transition: opacity 100ms ease-in;
+-moz-transition: opacity 100ms ease-in;
+transition: opacity 100ms ease-in;
+pointer-events: none;
+}
+
+.popup01:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.popup01 > div {
+width: 400px;
+position: relative;
+margin: 200px 200px;
+}
+
+.popup01 .text {
+  font-family: krungthep;
+  font-size: 18px;
+  color: #fff4c2;
+  position: absolute;
+  text-align: center;
+  top: 57px;
+  left: 50px;
+}
+
+.close01 {
+  font-size: 22px;
+color: #4655a5;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+width: 30px;
+text-decoration: none;
+  font-weight: bold;
+}
+
+.close01:hover { color: white; }
 
 
+.folder02 {
+  position: absolute;
+  top: 175px;
+  right: 10px;
+  font-size: 1em;
+  padding: 0;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.folder02:hover {
+  opacity: 0.6;
+}
 
-  /*.button05 {
-    font-size: 1em;
-    padding: 10px;
-    border-radius: 20px/50px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease-out;
-    position: absolute;
-    top: 530px;
-    left: 1495px;
+.foldertitle02 {
+  font-family: krungthep;
+  font-size: 13px;
+  color: #fff4c2;
+  position: absolute;
+  top: 295px;
+  right: 38px;
+}
+
+.popup02 {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0);
+z-index: 1;
+opacity:0;
+-webkit-transition: opacity 100ms ease-in;
+-moz-transition: opacity 100ms ease-in;
+transition: opacity 100ms ease-in;
+pointer-events: none;
+}
+
+.popup02:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.popup02 > div {
+width: 430px;
+position: relative;
+margin: 100px 700px;
+}
+
+.popup02 .text {
+  font-family: krungthep;
+  font-size: 21px;
+  padding: 0;
+  width: 90%;
+  height: 200px;
+  overflow: scroll;
+  color: #fff4c2;
+  position: absolute;
+  text-align: center;
+  top: 70px;
+  left: 40px;
+}
+
+.close02 {
+  font-size: 22px;
+color: #4655a5;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+width: 30px;
+text-decoration: none;
+  font-weight: bold;
+}
+
+.close02:hover { color: white; }
+
+.folder03 {
+  position: absolute;
+  top: 350px;
+  right: 10px;
+  font-size: 1em;
+  padding: 0;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.folder03:hover {
+  opacity: 0.6;
+}
+
+.foldertitle03 {
+  font-family: krungthep;
+  font-size: 13px;
+  color: #fff4c2;
+  position: absolute;
+  top: 470px;
+  right: 43px;
+}
+
+.popup03 {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0);
+z-index: 1;
+opacity:0;
+-webkit-transition: opacity 100ms ease-in;
+-moz-transition: opacity 100ms ease-in;
+transition: opacity 100ms ease-in;
+pointer-events: none;
+}
+
+.popup03:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.popup03 > div {
+width: 400px;
+position: relative;
+margin: 400px 800px;
+}
+
+.popup03 .text {
+  font-family: krungthep;
+  font-size: 18px;
+  color: #fff4c2;
+  position: absolute;
+  text-align: center;
+  top: 57px;
+  left: 50px;
+}
+
+.close03 {
+  font-size: 22px;
+color: #4655a5;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+width: 30px;
+text-decoration: none;
+  font-weight: bold;
+}
+
+.close03:hover { color: white; }
+
+.folder04 {
+  position: absolute;
+  top: 515px;
+  right: 10px;
+  font-size: 1em;
+  padding: 0;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.folder04:hover {
+  opacity: 0.6;
+}
+
+.foldertitle04 {
+  font-family: krungthep;
+  font-size: 13px;
+  color: #fff4c2;
+  position: absolute;
+  top: 640px;
+  right: 24px;
+}
+
+.popup04 {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0);
+z-index: 1;
+opacity:0;
+-webkit-transition: opacity 100ms ease-in;
+-moz-transition: opacity 100ms ease-in;
+transition: opacity 100ms ease-in;
+pointer-events: none;
+}
+
+.popup04:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.popup04 > div {
+width: 400px;
+position: relative;
+margin: 500px 40px;
+}
+
+.popup04 .text {
+  font-family: krungthep;
+  font-size: 30px;
+  color: #fff4c2;
+  position: absolute;
+  text-align: center;
+  top: 115px;
+  left: 50px;
+}
+
+.popup04 .text .here {
+  color: #FFF4C2;
+}
+
+.popup04 .text .here:hover { color: turquoise;}
+
+.close04 {
+  font-size: 22px;
+color: #4655a5;
+  position: absolute;
+  top: 10px;
+  left: 15px;
+width: 30px;
+text-decoration: none;
+  font-weight: bold;
+}
+
+.close04:hover { color: white; }
+
+.power {
+  position: absolute;
+  top: 760px;
+  left: 30px;
+}
+
+@media (max-width: 700px) {
+
+  .title {
+      font-family: krungthep;
+      font-size: 65px;
+      color: #FFF4C2;
+      position: absolute;
+      left: -40px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      float: none;
+      width: auto;
   }
-  .button05:hover {
-    opacity: 0.6;
+
+  .popup01 {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0);
+      z-index: 1;
+      opacity:0;
+      -webkit-transition: opacity 100ms ease-in;
+      -moz-transition: opacity 100ms ease-in;
+      transition: opacity 100ms ease-in;
+      pointer-events: none;
+      float: none;
+      width: auto;
   }
   
-  .overlay05 {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transition: opacity 500ms;
-    visibility: hidden;
-    opacity: 0;
+  .popup01 > div {
+      width: 400px;
+      position: relative;
+      margin: 270px 20px;
   }
-  .overlay05:target {
-    visibility: visible;
-    opacity: 1;
+
+  .popup02 {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0);
+      z-index: 1;
+      opacity:0;
+      -webkit-transition: opacity 100ms ease-in;
+      -moz-transition: opacity 100ms ease-in;
+      transition: opacity 100ms ease-in;
+      pointer-events: none;
+      float: none;
+      width: auto;
   }
   
-  .popup05 {
-    transition: all 1s ease-in-out;
+  .popup02 > div {
+      width: 400px;
+      position: relative;
+      margin: 270px 20px;
   }
-  .popup05 .close05 {
-    position: absolute;
-    top: 69px;
-    left: 180px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #4655a5;
-  }
-  .popup05 .close05:hover {
-    color: #00FCED;
-  }
-  .popup05 .nightmessage {
-    position: absolute;
-    top: 15px;
-    left: 195px;
-  }
-  .popup05 .content05 {
-    position: absolute;
-    top: 300px;
-    left: 200px;
-  }*/
 
+  .popup03 {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0);
+      z-index: 1;
+      opacity:0;
+      -webkit-transition: opacity 100ms ease-in;
+      -moz-transition: opacity 100ms ease-in;
+      transition: opacity 100ms ease-in;
+      pointer-events: none;
+      float: none;
+      width: auto;
+  }
+  
+  .popup03 > div {
+      width: 400px;
+      position: relative;
+      margin: 270px 20px;
+  }
 
+  .popup04 {
+      position: fixed;
+      font-family: Arial, Helvetica, sans-serif;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0);
+      z-index: 1;
+      opacity:0;
+      -webkit-transition: opacity 100ms ease-in;
+      -moz-transition: opacity 100ms ease-in;
+      transition: opacity 100ms ease-in;
+      pointer-events: none;
+      float: none;
+      width: auto;
+  }
+  
+  .popup04 > div {
+      width: 400px;
+      position: relative;
+      margin: 270px 20px;
+  }
+
+} 

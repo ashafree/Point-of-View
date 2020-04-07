@@ -12,41 +12,40 @@ a {
     color: white;
 }
 
-.icons {
+.guestbox {
     position: relative;
-    margin-top: 200px;
-    margin-left: 540px;
-}
+    background: none;
+    width: 37vw;
+    margin: 220px 515px;
+    height: 307px;
+  }
 
-.icons .pic01 {
+ .one {
     position: absolute;
-}
+    top: 10px;
+    left: 15px;
+} 
 
-.icons .pic02 {
+ .two {
     position: absolute;
-    left: 330px;
-}
+    top: 10px;
+    right: 15px;
+} 
 
-.texts {
-    position: relative;
-    margin-left: 605px;
-}
-
-.texts .guestclick {
+.texts .guestclick{
     font-family: krungthep;
     font-size: 40px;
-    color: white;
     position: absolute;
-    top: 260px;
+    bottom: 0px;
+    left: 75px;
 }
 
-.texts .new {
+.texts .new{
     font-family: krungthep;
     font-size: 40px;
-    color: white;
     position: absolute;
-    left: 290px;
-    top: 260px;
+    bottom: 0px;
+    right: 40px;
 }
 
 a:hover {
@@ -55,40 +54,44 @@ a:hover {
 
 @media (max-width: 700px) {
     
-    .icons {
+    .guestbox {
         position: relative;
-        margin: 190px 127px;
+        background: none;
+        width: 55vw;
+        margin: 200px auto;
+        height: 350px;
+    }
+    
+    .guestbox .one {
+        position: relative;
+        margin: 0 auto;
         float: none;
         width: auto;
     }
     
-    .icons .pic01 {
-        position: relative;
-    }
-    
-    .icons .pic02 {
+    .guestbox .two {
         display: none;
-    }
-    
-    .texts {
-        position: relative;
-        margin-top: 150px;
         float: none;
         width: auto;
-    }
-    
-    .texts .guestclick {
-        font-family: krungthep;
-        font-size: 25px;
-        color: white;
-        position: relative;
-    }
-    
-    .texts .new {
-        font-family: krungthep;
-        font-size: 25px;
-        color: white;
-        position: relative;
     }
 
+    .texts .guestclick{
+        font-family: krungthep;
+        font-size: 40px;
+        position: absolute;
+        bottom: 40px;
+        left: 75px;
+    }
+    
+    .texts .new{
+        font-family: krungthep;
+        font-size: 40px;
+        position: absolute;
+        bottom: 0px;
+        right: 40px;
+    }
+    
+    a:hover {
+        color: #4654A4; 
+    }
 }
