@@ -232,24 +232,24 @@ position: relative;
 margin: 400px 800px;
 }
 
-.popup03 .text {
-  font-family: krungthep;
-  font-size: 18px;
-  color: #fff4c2;
+.popup03 .albums {
+  max-width: 400px;
   position: absolute;
   text-align: center;
-  top: 57px;
-  left: 50px;
+  top: 70px;
+  left: 70px;
+  height: 210px;
+  overflow: scroll;
 }
 
 .close03 {
   font-size: 22px;
-color: #4655a5;
+  color: #4655a5;
   position: absolute;
   top: 10px;
   left: 15px;
-width: 30px;
-text-decoration: none;
+  width: 30px;
+  text-decoration: none;
   font-weight: bold;
 }
 
